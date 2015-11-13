@@ -91,5 +91,5 @@ RUN touch /opt/scheduler-log.txt
 # Add VOLUMEs to allow backup of config, logs and databases
 VOLUME  ["/etc/postgresql", "/var/log/postgresql", "/var/lib/postgresql"]
 
-EXPOSE 8443 27017 22 80 5432
+EXPOSE 22 80 443 5432
 CMD ["/usr/bin/supervisord"]
